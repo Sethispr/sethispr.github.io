@@ -1,10 +1,10 @@
 ---
-title: Simple Guides for Fuwari
-published: 2024-04-01
-description: "How to use this blog template."
+title: pola
+published: 2025-03-05
+description: "docs for the rust tui pola"
 image: "./cover.jpeg"
-tags: ["Fuwari", "Blogging", "Customization"]
-category: Guides
+tags: ["terminal", "rust", "ratatui"]
+category: documentation
 draft: false
 ---
 
