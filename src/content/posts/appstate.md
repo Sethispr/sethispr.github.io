@@ -110,7 +110,7 @@ fn toggle_favorite(&mut self) {
 }
 ```
 
-### sort_results()
+### `sort_results()`
 
 Sorts results based on sort_field and sort_descending.
 
