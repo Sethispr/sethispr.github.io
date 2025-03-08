@@ -8,6 +8,8 @@ category: documentation
 draft: false
 ---
 
+# Overview
+
 <p align="center">
   <strong>Rust TUI for searching all known skins in SA faster!</strong>
 </p>
