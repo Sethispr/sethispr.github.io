@@ -1,7 +1,7 @@
 ---
 title: pola
 published: 2025-03-05
-description: "docs for the rust tui pola"
+description: "docs of pola"
 image: ""
 tags: ["terminal", "rust", "ratatui"]
 category: documentation
