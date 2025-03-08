@@ -112,7 +112,7 @@ fn toggle_favorite(&mut self) {
 
 ### `sort_results()`
 
-Sorts results based on sort_field and sort_descending.
+Sorts results based on `sort_field` and `sort_descending`.
 
 ```rust
 fn sort_results(&mut self) {
@@ -130,5 +130,5 @@ fn sort_results(&mut self) {
 ```
 
 :::tip
-The name_map HashMap enables quick lookups by skin name, optimizing search performance.
+The `name_map` HashMap enables quick lookups by skin name, optimizing search performance.
 :::
