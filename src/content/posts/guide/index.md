@@ -8,44 +8,103 @@ category: documentation
 draft: false
 ---
 
-> Cover image source: [Source](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/208fc754-890d-4adb-9753-2c963332675d/width=2048/01651-1456859105-(colour_1.5),girl,_Blue,yellow,green,cyan,purple,red,pink,_best,8k,UHD,masterpiece,male%20focus,%201boy,gloves,%20ponytail,%20long%20hair,.jpeg)
+<p align="center">
+  <strong>Rust TUI for searching all known skins in SA faster!</strong>
+</p>
 
-This blog template is built with [Astro](https://astro.build/). For the things that are not mentioned in this guide, you may find the answers in the [Astro Docs](https://docs.astro.build/).
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bd733989-b913-479a-ae55-19831eb348e9" alt="demo" width="721">
+</p>
 
-## Front-matter of Posts
+## Installation
 
-```yaml
----
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
-image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
-draft: false
----
-```
+Option 1: [Install (pola.exe)](https://github.com/Sethispr/pola/releases/tag/v0.1.1-stable) from the Release page.
 
-| Attribute     | Description                                                                                                                                                                                                 |
-|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `title`       | The title of the post.                                                                                                                                                                                      |
-| `published`   | The date the post was published.                                                                                                                                                                            |
-| `description` | A short description of the post. Displayed on index page.                                                                                                                                                   |
-| `image`       | The cover image path of the post.<br/>1. Start with `http://` or `https://`: Use web image<br/>2. Start with `/`: For image in `public` dir<br/>3. With none of the prefixes: Relative to the markdown file |
-| `tags`        | The tags of the post.                                                                                                                                                                                       |
-| `category`    | The category of the post.                                                                                                                                                                                   |
-| `draft`        | If this post is still a draft, which won't be displayed.                                                                                                                                                    |
+Option 2: Install the latest stable versions of [Rust](https://www.rust-lang.org/tools/install) and [Git](https://git-scm.com/downloads/win) first.
 
-## Where to Place the Post Files
+1. Clone the repository:
 
+   ```bash
+   git clone https://github.com/sethispr/pola
+   cd yourdirectory/pola
+   ```
 
+2. Run the application
 
-Your post files should be placed in `src/content/posts/` directory. You can also create sub-directories to better organize your posts and assets.
+   ```bash
+   cargo run --release
+   ```
 
-```
-src/content/posts/
-├── post-1.md
-└── post-2/
-    ├── cover.png
-    └── index.md
-```
+Option 3: You can also install the `pola` package directly using Cargo:
+
+1. Install the package
+
+   ```bash
+   cargo install pola --locked
+   ```
+
+2. Run the application
+
+   ```bash
+   pola
+   ```
+
+<img src="https://img.shields.io/crates/d/pola" alt="Crates.io Download Badge">
+
+<https://crates.io/crates/pola>
+
+> [!TIP]
+> If installing isn't your thing, feel free to look at the [Online Demo](https://sethispr.github.io/pola) or [Skin List](https://github.com/Sethispr/pola/blob/main/.github/SKIN.md)
+
+## Cheat Sheet
+
+<details>
+<summary>Tags List</summary>
+  
+<img src="https://github.com/user-attachments/assets/2e8b5a87-2ce7-4f41-b6f0-03c8d08c161f" alt="Outdated Demo v0.1.1-beta" width="706">
+
+| Tag                   | Description                         | Tag                   | Description                         |
+|-----------------------|-------------------------------------|-----------------------|-------------------------------------|
+| <kbd>Event</kbd>      | Event skins                         | <kbd>Bundle</kbd>     | Bundle skins                        |
+| <kbd>Code</kbd>       | Code-redeemed skins                 | <kbd>Launch</kbd>     | Skins obtained from game launch     |
+| <kbd>Case</kbd>       | Case skins                          | <kbd>Red</kbd>        | Red skin rarity                     |
+| <kbd>Pink</kbd>       | Pink skin rarity                    | <kbd>Teal</kbd>       | Teal skin rarity                    |
+| <kbd>2022</kbd>       | 2022 skins                          | <kbd>2023</kbd>       | 2023 skins                          |
+| <kbd>2024</kbd>       | 2024 skins                          | <kbd>2025</kbd>       | 2025 skins                          |
+| <kbd>Valentine</kbd>  | Valentine case skins                | <kbd>Birthday</kbd>   | Birthday case skins                 |
+| <kbd>Easter</kbd>     | Easter case skins                   | <kbd>Summer</kbd>     | Summer case skins                   |
+| <kbd>Halloween</kbd>  | Halloween case skins                | <kbd>Christmas</kbd>  | Christmas case skins                |
+| <kbd>Exquisite</kbd>  | Exquisite case skins                | <kbd>Animal</kbd>     | Skins from the Animal case          |
+| <kbd>Camouflage</kbd> | Skins from the Camouflage case      | <kbd>Future</kbd>     | Skins from the Future case          |
+| <kbd>Material</kbd>   | Skins from the Material case        | <kbd>Nature</kbd>     | Skins from the Nature case          |
+| <kbd>Pattern</kbd>    | Skins from the Pattern case         | <kbd>Refined</kbd>    | Skins from the Refined case         |
+| <kbd>Gamenight</kbd>  | Code skins given on Gamenight       | <kbd>Special</kbd>    | Skins obtained for contributing     |
+
+</details>
+
+<details>
+<summary>Keybinds</summary>
+
+| Bind                | Description                    | Bind                       | Description                     |
+|---------------------|--------------------------------|----------------------------|---------------------------------|
+| <kbd>ctrl+h</kbd>   | Show help                      | <kbd>▲</kbd> <kbd>▼</kbd>  | Navigate results                |
+| <kbd>►</kbd>        | Accept suggestion              | <kbd>tab</kbd>             | Cycle suggestions               |
+| <kbd>home/end</kbd> | Go to first last result        | <kbd>ctrl+d</kbd>          | Toggle detailed view            |
+| <kbd>ctrl+l</kbd>   | Clear search input             | <kbd>esc</kbd>             | Close TUI/Help                  |
+| <kbd>ctrl+y</kbd>   | Redo                           | <kbd>ctrl+z</kbd>          | Undo                            |
+| <kbd>ctrl+f</kbd>   | Favorite/Undo Favorite         | <kbd>shift+f</kbd>         | Remove all favorites            |
+
+</details>
+
+<details>
+<summary>Website</summary>
+
+[Online Demo](https://sethispr.github.io/pola)
+
+![demo](https://github.com/user-attachments/assets/958aa469-e7ed-40c4-836b-b119d09b43dd) 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c10cc1fa-a475-4e35-b00c-f9f3f1d65b49" alt="themes"><img src="https://github.com/user-attachments/assets/4710f939-7072-4ad1-9ddc-986390a8b040" alt="shortcuts">
+</p>
+
+</details>
