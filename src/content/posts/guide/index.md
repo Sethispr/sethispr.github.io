@@ -2,7 +2,7 @@
 title: Introduction
 published: 2025-03-08
 updated: 2025-03-08
-description: 'Docs for the Pola codebase'
+description: 'Intro for the Pola Documentation Site'
 tags: ["docs", "main"]
 category: 'intro'
 draft: false
