@@ -4,7 +4,7 @@ published: 2025-03-08
 updated: 2025-03-08
 description: 'Docs for the Pola codebase'
 tags: ["docs", "main"]
-category: 'docs'
+category: 'intro'
 draft: false
 ---
 
