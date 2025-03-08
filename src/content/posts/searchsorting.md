@@ -10,7 +10,7 @@ draft: false
 
 # Search and Sorting
 
-Skin TUI provides a powerful search system with fuzzy matching and sorting capabilities.
+pola provides a powerful search system with fuzzy matching and sorting capabilities.
 
 ## Search: `search_skins()`
 
