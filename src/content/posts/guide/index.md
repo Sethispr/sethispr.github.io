@@ -8,10 +8,8 @@ category: 'docs'
 draft: false
 ---
 
-# Pola Documentation
-
 <p align="center">
-  <strong>Technical breakdown of Pola</strong>
+  <strong>Pola Documentation</strong>
 </p>
 
 This section provides an in-depth look at the Pola codebase, built with Rust using `ratatui` and `crossterm`. It covers the architecture, core components, and implementation details for developers interested in understanding or contributing to the project.
