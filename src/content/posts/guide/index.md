@@ -4,7 +4,7 @@ published: 2025-03-05
 description: "docs of pola"
 image: ""
 tags: ["terminal", "rust", "ratatui"]
-category: documentation
+category: docs
 draft: false
 ---
 
