@@ -16,28 +16,7 @@ export const siteConfig: SiteConfig = {
   },
   banner: {
     enable: false,
-    src: '',
-
-import MainGridLayout from '../layouts/MainGridLayout.astro'
-
-import { getEntry } from 'astro:content'
-import { i18n } from '../i18n/translation'
-import I18nKey from '../i18n/i18nKey'
-import Markdown from '@components/misc/Markdown.astro'
-
-const aboutPost = await getEntry('spec', 'about')
-
-const { Content } = await aboutPost.render()
----
-<MainGridLayout title={i18n(I18nKey.about)} description={i18n(I18nKey.about)}>
-    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
-        <div class="card-base z-10 px-9 py-6 relative w-full ">
-            <Markdown class="mt-2">
-                <Content />
-            </Markdown>
-        </div>
-    </div>
-</MainGridLayout> Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    src: 'assets/images/demo-banner.png',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
     position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
       enable: false,         // Display the credit text of the banner image
@@ -72,9 +51,9 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/demo-avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/' assets/images/demo-avatar.png
-  name: 'Pola',
-  bio: 'Documention for the Pola codebase',
+  avatar: 'assets/images/demo-avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+  name: 'Lorem Ipsum',
+  bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   links: [
     {
       name: 'GitHub',
