@@ -16,7 +16,7 @@ export const siteConfig: SiteConfig = {
   },
   banner: {
     enable: false,
-    src: '',   ---
+    src: '',
 
 import MainGridLayout from '../layouts/MainGridLayout.astro'
 
