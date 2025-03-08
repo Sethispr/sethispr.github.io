@@ -1,9 +1,8 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+This is the documentation site for [pola](https://github.com/sethispr/pola).
 
-::github{repo="saicaca/fuwari"}
+::github{repo="sethispr/pola"}
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+> ### Links
+> - [pola Online Demo](https://sethispr.gitub.io/pola)
+> - [Skins List](https://github.com/Sethispr/pola/blob/main/.github/SKIN.md)
